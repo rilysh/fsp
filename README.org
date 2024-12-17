@@ -1,2 +1,10 @@
 ** fsp
 A small program.
+
+** Note
+For this program you shouldn't use the upstream version of TinyCC,
+as discard_offset heavily depends on the offset of the binary file.
+Later versions of TinyCC somehow produces larger (a few bytes more
+to say) binary than the this version and doesn't produces section
+names at end, it will mess up as from wrong offset bytes will be
+removed.
